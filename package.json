@@ -23,10 +23,14 @@
     "dist/src/index.d.ts"
   ],
   "scripts": {
+    "precommit": "pretty-quick --staged",
     "lint": "tslint -c tslint.json 'src/**/*.ts' 'test/**/*.ts'",
     "build": "tsc --build"
   },
   "devDependencies": {
+    "husky": "1.1.4",
+    "prettier": "1.15.2",
+    "pretty-quick": "1.8.0",
     "tslint": "5.11.0",
     "tslint-config-prettier": "1.16.0",
     "typescript": "3.1.6",
