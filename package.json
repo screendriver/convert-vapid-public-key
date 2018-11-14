@@ -32,7 +32,9 @@
     "build": "tsc --build"
   },
   "devDependencies": {
+    "@types/atob": "2.1.1",
     "@types/tape": "4.2.32",
+    "atob": "2.1.2",
     "codecov": "3.1.0",
     "husky": "1.1.4",
     "nyc": "13.1.0",
