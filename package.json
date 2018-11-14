@@ -24,6 +24,7 @@
   ],
   "scripts": {
     "precommit": "pretty-quick --staged",
+    "clean": "rm -rf dist",
     "lint": "tslint -c tslint.json 'src/**/*.ts' 'test/**/*.ts'",
     "build": "tsc --build"
   },
