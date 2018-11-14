@@ -1,0 +1,25 @@
+{
+  "name": "convert-vapid-public-key",
+  "version": "0.0.1",
+  "main": "dist/src/index.js",
+  "author": "Christian Rackerseder <git@echooff.de>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:screendriver/convert-vapid-public-key.git"
+  },
+  "bugs": {
+    "url": "https://github.com/screendriver/convert-vapid-public-key/issues"
+  },
+  "homepage": "https://github.com/screendriver/convert-vapid-public-key#readme",
+  "keywords": [
+    "vapid",
+    "push-notifications",
+    "web-push",
+    "urlBase64ToUint8Array"
+  ],
+  "files": [
+    "dist/src/index.js",
+    "dist/src/index.d.ts"
+  ]
+}
