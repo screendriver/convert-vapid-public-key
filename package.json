@@ -23,7 +23,8 @@
     "dist/src/index.d.ts"
   ],
   "scripts": {
-    "lint": "tslint -c tslint.json 'src/**/*.ts' 'test/**/*.ts'"
+    "lint": "tslint -c tslint.json 'src/**/*.ts' 'test/**/*.ts'",
+    "build": "tsc --build"
   },
   "devDependencies": {
     "tslint": "5.11.0",
