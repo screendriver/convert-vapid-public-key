@@ -1,13 +1,13 @@
 export function toUint8Array(
   base64String: string,
-  atob: typeof window.atob,
+  atobFn: typeof atob,
 ): Uint8Array {
   const padding = '='.repeat((4 - (base64String.length % 4)) % 4);
   const base64 = (base64String + padding)
     .replace(/\-/g, '+')
     .replace(/_/g, '/');
 
-  const rawData = atob(base64);
+  const rawData = atobFn(base64);
   const outputArray = new Uint8Array(rawData.length);
 
   for (let i = 0; i < rawData.length; ++i) {
