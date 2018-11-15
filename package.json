@@ -1,7 +1,9 @@
 {
   "name": "convert-vapid-public-key",
   "version": "0.0.1",
-  "main": "dist/src/index.js",
+  "main": "./dist/src/index.js",
+  "module": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
   "author": "Christian Rackerseder <git@echooff.de>",
   "license": "MIT",
   "repository": {
@@ -27,7 +29,7 @@
     "prepublishOnly": "yarn clean && yarn build && yarn test",
     "clean": "rm -rf dist",
     "lint": "tslint -c tslint.json 'src/**/*.ts' 'test/**/*.ts'",
-    "test:unit": "nyc tape -r source-map-support/register 'dist/test/**/*.js' | tap-dot",
+    "test:unit": "nyc tape -r source-map-support/register -r esm 'dist/test/**/*.js' | tap-dot",
     "test": "yarn lint && yarn test:unit && yarn coverage",
     "coverage": "nyc report --reporter=text-summary",
     "build": "tsc --build"
