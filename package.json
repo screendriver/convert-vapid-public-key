@@ -29,11 +29,9 @@
     "clean": "rm -rf dist",
     "lint": "tslint -c tslint.json 'src/**/*.ts' 'test/**/*.ts'",
     "check:prettier": "prettier --check 'src/**/*.ts' 'test/**/*.ts'",
-    "test:unit:tap": "nyc tape -r source-map-support/register -r esm 'dist/test/**/*.js'",
-    "test:unit": "yarn test:unit:tap | tap-dot",
-    "test": "yarn test:unit && yarn coverage",
-    "test:ci": "yarn test:unit:tap | tap-xunit > test-results.xml",
-    "coverage": "nyc report --reporter=text-summary",
+    "test:unit:coverage": "nyc tape -r source-map-support/register -r esm 'dist/test/**/*.js'",
+    "test:unit": "yarn test:unit:coverage | tap-dot",
+    "test:ci": "yarn test:unit:coverage | tap-xunit > test-results.xml",
     "build": "tsc --build"
   },
   "devDependencies": {
