@@ -31,8 +31,8 @@
     "check:prettier": "prettier --check 'src/**/*.ts' 'test/**/*.ts'",
     "test:unit:tap": "nyc tape -r source-map-support/register -r esm 'dist/test/**/*.js'",
     "test:unit": "yarn test:unit:tap | tap-dot",
-    "test": "yarn lint && yarn test:unit && yarn coverage",
-    "test:ci": "yarn lint && yarn test:unit:tap | tap-xunit > test-results.xml",
+    "test": "yarn test:unit && yarn coverage",
+    "test:ci": "yarn test:unit:tap | tap-xunit > test-results.xml",
     "coverage": "nyc report --reporter=text-summary",
     "build": "tsc --build"
   },
