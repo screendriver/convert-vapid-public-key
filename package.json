@@ -46,7 +46,7 @@
     "source-map-support": "0.5.12",
     "tap-dot": "2.0.0",
     "tap-xunit": "2.3.0",
-    "tape": "4.9.1",
+    "tape": "4.10.1",
     "tslint": "5.11.0",
     "tslint-config-prettier": "1.17.0",
     "typescript": "3.2.2",
