@@ -22,6 +22,9 @@ steps:
   - script: yarn build
     displayName: Build application
 
+  - script: yarn check:prettier
+    displayName: Check code styles
+
   - script: yarn test:ci
     displayName: Running tests
 
