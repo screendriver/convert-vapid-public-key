@@ -44,7 +44,7 @@
     "tap-nirvana": "1.1.0",
     "tape": "4.10.1",
     "tslint": "5.11.0",
-    "tslint-config-prettier": "1.17.0",
+    "tslint-config-prettier": "1.18.0",
     "typescript": "3.4.3",
     "typescript-tslint-plugin": "0.2.0"
   }
