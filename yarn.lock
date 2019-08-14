@@ -90,10 +90,10 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@types/atob@2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@types/atob/-/atob-2.1.1.tgz#9116a74762ea02f4a74bc3c448d05b01fb0a9d4a"
-  integrity sha512-/6Tp90Jzphdqu/m2Re8x9qWG7rZdwmp9BmB1bRSyyt0oY8lRE+H43oqOpdi5gm3CA0lvfbQMxk/Ma9+ISRmMkA==
+"@types/atob@2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@types/atob/-/atob-2.1.2.tgz#157eb0cc46264a8c55f2273a836c7a1a644fb820"
+  integrity sha512-8GAYQ1jDRUQkSpHzJUqXwAkYFOxuWAOGLhIR4aPd/Y/yL12Q/9m7LsKpHKlfKdNE/362Hc9wPI1Yh6opDfxVJg==
 
 "@types/node@*":
   version "10.12.7"
