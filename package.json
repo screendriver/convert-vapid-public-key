@@ -34,7 +34,7 @@
     "build": "tsc --build"
   },
   "devDependencies": {
-    "@types/atob": "2.1.1",
+    "@types/atob": "2.1.2",
     "@types/tape": "4.2.32",
     "atob": "2.1.2",
     "esm": "3.2.22",
