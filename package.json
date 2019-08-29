@@ -1,9 +1,9 @@
 {
   "name": "convert-vapid-public-key",
   "version": "1.0.1",
-  "main": "./dist/src/index.js",
-  "module": "./dist/src/index.js",
-  "types": "./dist/src/index.d.ts",
+  "main": "./target/src/index.js",
+  "module": "./target/src/index.js",
+  "types": "./target/src/index.d.ts",
   "author": "Christian Rackerseder <git@echooff.de>",
   "license": "MIT",
   "repository": {
@@ -21,12 +21,12 @@
     "urlBase64ToUint8Array"
   ],
   "files": [
-    "dist/src/**/*.js",
-    "dist/src/**/*.js.map",
-    "dist/src/**/*.d.ts"
+    "target/src/**/*.js",
+    "target/src/**/*.js.map",
+    "target/src/**/*.d.ts"
   ],
   "scripts": {
-    "clean": "rm -rf dist",
+    "clean": "rm -rf target",
     "lint": "eslint --ignore-path .gitignore --ext ts src test",
     "prettier:check": "prettier --check 'src/**/*.ts' 'test/**/*.ts'",
     "test:unit:coverage": "nyc tape -r source-map-support/register -r esm 'dist/test/**/*.js'",
