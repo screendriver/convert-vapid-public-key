@@ -29,10 +29,7 @@
     "clean": "rm -rf target",
     "compile": "tsc --build",
     "lint": "eslint --ignore-path .gitignore --ext ts src test",
-    "prettier:check": "prettier --check 'src/**/*.ts' 'test/**/*.ts'",
-    "test:unit:coverage": "nyc tape -r source-map-support/register -r esm 'dist/test/**/*.js'",
-    "test:unit": "tape -r source-map-support/register -r esm 'dist/test/**/*.js' | tap-nirvana",
-    "build": "tsc --build"
+    "test:unit": "jest target/test"
   },
   "devDependencies": {
     "@types/atob": "2.1.2",
