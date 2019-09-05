@@ -29,23 +29,20 @@
     "clean": "rm -rf target",
     "compile": "tsc --build",
     "lint": "eslint --ignore-path .gitignore --ext ts src test",
-    "test:unit": "jest test"
+    "test:unit": "ava",
+    "test:unit:coverage": "nyc ava"
   },
   "devDependencies": {
-    "@babel/core": "7.5.5",
-    "@babel/preset-env": "7.5.5",
-    "@babel/preset-typescript": "7.3.3",
     "@types/atob": "2.1.2",
-    "@types/jest": "24.0.18",
-    "@types/tape": "4.2.33",
     "@typescript-eslint/eslint-plugin": "2.0.0",
     "@typescript-eslint/parser": "2.0.0",
     "atob": "2.1.2",
-    "babel-jest": "24.9.0",
+    "ava": "2.3.0",
     "eslint": "6.2.2",
     "eslint-config-prettier": "6.1.0",
     "eslint-plugin-prettier": "3.1.0",
-    "jest": "24.9.0",
+    "esm": "3.2.25",
+    "nyc": "14.1.1",
     "prettier": "1.18.2",
     "typescript": "3.6.2"
   }
