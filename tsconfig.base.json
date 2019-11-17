@@ -16,7 +16,6 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "plugins": [{ "name": "typescript-tslint-plugin" }]
+    "esModuleInterop": true
   }
 }
