@@ -45,6 +45,6 @@
     "esm": "3.2.25",
     "nyc": "14.1.1",
     "prettier": "1.19.1",
-    "typescript": "3.6.3"
+    "typescript": "3.7.2"
   }
 }
