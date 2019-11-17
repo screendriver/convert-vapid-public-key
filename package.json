@@ -29,22 +29,27 @@
     "clean": "rm -rf target",
     "compile": "tsc --build",
     "lint": "eslint --ignore-path .gitignore --ext ts src test",
-    "test:unit": "ava",
-    "test:unit:coverage": "nyc ava"
+    "test:unit": "TS_NODE_PROJECT=tsconfig.base.json mocha",
+    "test:unit:coverage": "TS_NODE_PROJECT=tsconfig.base.json nyc mocha"
   },
   "devDependencies": {
     "@types/atob": "2.1.2",
+    "@types/chai": "4.2.5",
+    "@types/mocha": "5.2.7",
     "@typescript-eslint/eslint-plugin": "2.7.0",
     "@typescript-eslint/parser": "2.7.0",
     "atob": "2.1.2",
     "ava": "2.3.0",
+    "chai": "4.2.0",
     "eslint": "6.6.0",
     "eslint-config-prettier": "6.6.0",
     "eslint-plugin-ava": "8.0.0",
     "eslint-plugin-prettier": "3.1.1",
-    "esm": "3.2.25",
+    "esm": "3.2.20",
+    "mocha": "6.2.2",
     "nyc": "14.1.1",
     "prettier": "1.19.1",
+    "ts-node": "8.5.2",
     "typescript": "3.7.2"
   }
 }
