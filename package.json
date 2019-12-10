@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@types/atob": "2.1.2",
-    "@types/chai": "4.2.5",
+    "@types/chai": "4.2.7",
     "@types/mocha": "5.2.7",
     "@typescript-eslint/eslint-plugin": "2.7.0",
     "@typescript-eslint/parser": "2.7.0",
