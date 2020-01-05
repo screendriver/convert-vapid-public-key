@@ -28,7 +28,7 @@
   "scripts": {
     "clean": "rm -rf target",
     "compile": "tsc --build",
-    "lint": "eslint --ignore-path .gitignore --ext ts src test",
+    "lint": "eslint --ext ts src test",
     "test:unit": "TS_NODE_PROJECT=tsconfig.base.json mocha",
     "test:unit:coverage": "TS_NODE_PROJECT=tsconfig.base.json nyc mocha"
   },
