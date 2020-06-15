@@ -3,7 +3,7 @@
 [![GitHub Actions status](https://github.com/screendriver/convert-vapid-public-key/workflows/CI/badge.svg)](https://github.com/screendriver/convert-vapid-public-key/actions)
 [![TypeScript](https://img.shields.io/badge/types-TypeScript-blue.svg)](https://www.typescriptlang.org)
 [![Total alerts](https://img.shields.io/lgtm/alerts/github/screendriver/convert-vapid-public-key.svg)](https://lgtm.com/projects/g/screendriver/convert-vapid-public-key/alerts/)
-[![codecov](https://codecov.io/gh/screendriver/convert-vapid-public-key/branch/master/graph/badge.svg)](https://codecov.io/gh/screendriver/convert-vapid-public-key)
+[![codecov](https://codecov.io/gh/screendriver/convert-vapid-public-key/branch/main/graph/badge.svg)](https://codecov.io/gh/screendriver/convert-vapid-public-key)
 
 To subscribe to [Web Push Notifications](https://developers.google.com/web/fundamentals/push-notifications/) you have to provide an Base64 application server key that needs to be converted to an [Uint8Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array). This package helps you with the conversion from a Base64 string to an `Uint8Array`.
 
