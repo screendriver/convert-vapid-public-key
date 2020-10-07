@@ -1,6 +1,6 @@
 {
   "name": "convert-vapid-public-key",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "./target/src/index.js",
   "module": "./target/src/index.js",
   "types": "./target/src/index.d.ts",
