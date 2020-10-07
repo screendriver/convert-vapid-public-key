@@ -26,7 +26,6 @@
     "target/src/**/*.d.ts"
   ],
   "scripts": {
-    "clean": "rm -rf target",
     "compile": "tsc --build",
     "lint": "eslint src test --ext '.ts'",
     "test:unit": "TS_NODE_PROJECT=tsconfig.base.json mocha",
