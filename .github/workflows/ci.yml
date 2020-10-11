@@ -3,6 +3,13 @@ name: CI
 on: [push, pull_request]
 
 jobs:
+  commitlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: wagoid/commitlint-github-action@v2
   code-coverage:
     runs-on: ubuntu-latest
     steps:
@@ -12,7 +19,8 @@ jobs:
         with:
           node-version: 14
       - run: npm ci
-      - run: npm run test:unit:coverage
+      - name: Run unit tests
+        run: npm run test:unit:coverage
       - name: Upload code coverage to Codecov
         uses: codecov/codecov-action@v1
         with:
@@ -21,27 +29,44 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [10, 12, 14]
-    name: Node ${{ matrix.node }}
+        node-version: [10, 12, 14]
+    name: Use Node.js v${{ matrix.node-version }}
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node }}
-      - name: Cache Node.js modules
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.OS }}-node-
-            ${{ runner.OS }}-
+          node-version: ${{ matrix.node-version }}
       - name: Install dependencies
         run: npm ci
       - name: Check source code
         run: npm run lint
       - name: Compile source code
         run: npm run compile
-      - name: Run tests
-        run: npm run test:unit
+      - name: Upload compiled source code as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: compiled-source-node-${{ matrix.node-version }}
+          path: target/src/
+  release:
+    if: github.ref == 'refs/heads/main'
+    needs: [commitlint, code-coverage, build]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - name: Install dependencies
+        run: npm ci
+      - name: Download compiled source code artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: compiled-source-node-14
+          path: target/src/
+      - name: Semantic release
+        run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
