@@ -1,6 +1,6 @@
 module.exports = {
   spec: 'test/**/*.test.*',
-  require: ['esm', 'ts-node/register/transpile-only'],
+  require: ['./test/setup.js'],
   extension: 'ts',
   ui: 'tdd',
   reporter: 'dot',

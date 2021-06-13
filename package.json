@@ -1,8 +1,9 @@
 {
   "name": "convert-vapid-public-key",
   "version": "1.0.2",
+  "type": "module",
   "main": "./target/src/index.js",
-  "module": "./target/src/index.js",
+  "exports": "./target/src/index.js",
   "types": "./target/src/index.d.ts",
   "author": "Christian Rackerseder <git@echooff.de>",
   "license": "MIT",
@@ -28,10 +29,14 @@
   "scripts": {
     "compile": "tsc --build",
     "lint": "eslint src test --ext '.ts'",
-    "test:unit": "TS_NODE_PROJECT=tsconfig.base.json mocha",
-    "test:unit:coverage": "TS_NODE_PROJECT=tsconfig.base.json c8 mocha"
+    "test:unit": "mocha",
+    "test:unit:coverage": "c8 mocha"
   },
   "devDependencies": {
+    "@babel/core": "7.14.5",
+    "@babel/preset-env": "7.14.5",
+    "@babel/preset-typescript": "7.14.5",
+    "@babel/register": "7.14.5",
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/commit-analyzer": "8.0.1",
     "@semantic-release/git": "9.0.0",
@@ -50,11 +55,9 @@
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-mocha": "9.0.0",
     "eslint-plugin-prettier": "3.4.0",
-    "esm": "3.2.25",
     "mocha": "9.0.0",
     "prettier": "2.3.1",
     "semantic-release": "17.4.3",
-    "ts-node": "10.0.0",
     "typescript": "4.3.2"
   }
 }
