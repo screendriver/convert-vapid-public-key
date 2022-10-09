@@ -1,7 +1,8 @@
 {
 	"compilerOptions": {
-		"target": "es2015",
+		"target": "ES2020",
 		"module": "Node16",
+		"moduleResolution": "Node",
 		"outDir": "./target",
 		"importHelpers": true,
 		"sourceMap": true,
