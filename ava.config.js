@@ -1,10 +1,10 @@
 export default {
-	files: ['test/**/*.test.*'],
+	files: ["test/**/*.test.*"],
 	extensions: {
-		ts: 'module',
+		ts: "module",
 	},
-	nodeArguments: ['--loader=ts-node/esm'],
+	nodeArguments: ["--loader=ts-node/esm"],
 	environmentVariables: {
-		TS_NODE_PROJECT: 'tsconfig.base.json',
+		TS_NODE_PROJECT: "tsconfig.base.json",
 	},
 };

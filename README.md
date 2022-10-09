@@ -21,13 +21,13 @@ $ yarn add convert-vapid-public-key
 ## Usage 🔨
 
 ```ts
-import convertVapidKey from 'convert-vapid-public-key';
+import convertVapidKey from "convert-vapid-public-key";
 
 async function subscribe() {
-	const registration = await navigator.serviceWorker.register('service-worker.js');
+	const registration = await navigator.serviceWorker.register("service-worker.js");
 	const subscribeOptions = {
 		userVisibleOnly: true,
-		applicationServerKey: convertVapidKey('<your-base64-vapid-public-key>'),
+		applicationServerKey: convertVapidKey("<your-base64-vapid-public-key>"),
 	};
 	const pushSubscription = await registration.pushManager.subscribe(subscribeOptions);
 	// ...
