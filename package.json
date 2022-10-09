@@ -1,57 +1,57 @@
 {
-    "name": "convert-vapid-public-key",
-    "version": "1.1.0",
-    "type": "module",
-    "main": "./target/src/index.js",
-    "exports": "./target/src/index.js",
-    "types": "./target/src/index.d.ts",
-    "author": "Christian Rackerseder <git@echooff.de>",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "git+ssh://git@github.com/screendriver/convert-vapid-public-key.git"
-    },
-    "bugs": {
-        "url": "https://github.com/screendriver/convert-vapid-public-key/issues"
-    },
-    "homepage": "https://github.com/screendriver/convert-vapid-public-key#readme",
-    "keywords": [
-        "vapid",
-        "push-notifications",
-        "web-push",
-        "urlBase64ToUint8Array"
-    ],
-    "files": [
-        "target/src/**/*.js",
-        "target/src/**/*.js.map",
-        "target/src/**/*.d.ts"
-    ],
-    "scripts": {
-        "compile": "tsc --build",
-        "lint": "eslint src test --ext '.ts'",
-        "test:unit": "ava",
-        "test:unit:coverage": "c8 ava"
-    },
-    "devDependencies": {
-        "@semantic-release/changelog": "6.0.1",
-        "@semantic-release/commit-analyzer": "9.0.2",
-        "@semantic-release/git": "10.0.1",
-        "@semantic-release/github": "8.0.6",
-        "@semantic-release/npm": "9.0.1",
-        "@semantic-release/release-notes-generator": "10.0.3",
-        "@types/atob": "2.1.2",
-        "@typescript-eslint/eslint-plugin": "5.39.0",
-        "@typescript-eslint/parser": "5.39.0",
-        "atob": "2.1.2",
-        "ava": "4.3.3",
-        "c8": "7.12.0",
-        "eslint": "8.25.0",
-        "eslint-config-prettier": "8.5.0",
-        "eslint-plugin-ava": "13.2.0",
-        "eslint-plugin-prettier": "4.2.1",
-        "prettier": "2.7.1",
-        "semantic-release": "19.0.5",
-        "ts-node": "10.9.1",
-        "typescript": "4.8.4"
-    }
+	"name": "convert-vapid-public-key",
+	"version": "1.1.0",
+	"type": "module",
+	"main": "./target/src/index.js",
+	"exports": "./target/src/index.js",
+	"types": "./target/src/index.d.ts",
+	"author": "Christian Rackerseder <git@echooff.de>",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/screendriver/convert-vapid-public-key.git"
+	},
+	"bugs": {
+		"url": "https://github.com/screendriver/convert-vapid-public-key/issues"
+	},
+	"homepage": "https://github.com/screendriver/convert-vapid-public-key#readme",
+	"keywords": [
+		"vapid",
+		"push-notifications",
+		"web-push",
+		"urlBase64ToUint8Array"
+	],
+	"files": [
+		"target/src/**/*.js",
+		"target/src/**/*.js.map",
+		"target/src/**/*.d.ts"
+	],
+	"scripts": {
+		"compile": "tsc --build",
+		"lint": "eslint src test --ext '.ts'",
+		"test:unit": "ava",
+		"test:unit:coverage": "c8 ava"
+	},
+	"devDependencies": {
+		"@semantic-release/changelog": "6.0.1",
+		"@semantic-release/commit-analyzer": "9.0.2",
+		"@semantic-release/git": "10.0.1",
+		"@semantic-release/github": "8.0.6",
+		"@semantic-release/npm": "9.0.1",
+		"@semantic-release/release-notes-generator": "10.0.3",
+		"@types/atob": "2.1.2",
+		"@typescript-eslint/eslint-plugin": "5.39.0",
+		"@typescript-eslint/parser": "5.39.0",
+		"atob": "2.1.2",
+		"ava": "4.3.3",
+		"c8": "7.12.0",
+		"eslint": "8.25.0",
+		"eslint-config-prettier": "8.5.0",
+		"eslint-plugin-ava": "13.2.0",
+		"eslint-plugin-prettier": "4.2.1",
+		"prettier": "2.7.1",
+		"semantic-release": "19.0.5",
+		"ts-node": "10.9.1",
+		"typescript": "4.8.4"
+	}
 }
