@@ -15,6 +15,6 @@ export default defineConfig({
 			reporter: ["lcov", "text-summary", "clover"],
 			reportsDirectory: "./target/coverage",
 		},
-		include: ["./test/**/*.test.ts"],
+		dir: "test/",
 	},
 });
