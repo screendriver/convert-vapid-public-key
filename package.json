@@ -29,8 +29,8 @@
 	"scripts": {
 		"compile": "tsc --build",
 		"lint": "eslint src test --ext '.ts'",
-		"test:unit": "ava",
-		"test:unit:coverage": "c8 ava"
+		"test:unit": "vitest",
+		"test:unit:coverage": "vitest run --coverage"
 	},
 	"devDependencies": {
 		"@semantic-release/changelog": "6.0.1",
