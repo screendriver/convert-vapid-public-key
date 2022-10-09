@@ -16,5 +16,6 @@ export default defineConfig({
 			reportsDirectory: "./target/coverage",
 		},
 		dir: "test/",
+		threads: false,
 	},
 });
