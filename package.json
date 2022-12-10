@@ -29,8 +29,8 @@
 	"scripts": {
 		"compile": "tsc --build",
 		"lint": "eslint . --ext '.ts'",
-		"test:unit": "vitest",
-		"test:unit:coverage": "vitest run --coverage"
+		"test:unit": "NODE_OPTIONS='--loader tsx --no-warnings' uvu 'test' '.*\\.test\\.ts$'",
+		"test:unit:coverage": "c8 npm run test:unit"
 	},
 	"devDependencies": {
 		"@semantic-release/changelog": "6.0.2",
