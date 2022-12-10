@@ -29,8 +29,8 @@
 	"scripts": {
 		"compile": "tsc --build",
 		"lint": "eslint . --ext '.ts'",
-		"test:unit": "vitest",
-		"test:unit:coverage": "vitest run --coverage"
+		"test:unit": "NODE_OPTIONS='--loader tsx --no-warnings' uvu 'test' '.*\\.test\\.ts$'",
+		"test:unit:coverage": "c8 npm run test:unit"
 	},
 	"devDependencies": {
 		"@semantic-release/changelog": "6.0.2",
@@ -42,15 +42,16 @@
 		"@types/atob": "2.1.2",
 		"@typescript-eslint/eslint-plugin": "5.46.0",
 		"@typescript-eslint/parser": "5.46.0",
-		"@vitest/coverage-c8": "0.25.6",
 		"atob": "2.1.2",
 		"c8": "7.12.0",
+		"esbuild": "0.16.4",
 		"eslint": "8.29.0",
 		"eslint-config-prettier": "8.5.0",
 		"eslint-plugin-prettier": "4.2.1",
 		"prettier": "2.8.1",
 		"semantic-release": "19.0.5",
+		"tsx": "3.12.1",
 		"typescript": "4.9.4",
-		"vitest": "0.25.6"
+		"uvu": "0.5.6"
 	}
 }
