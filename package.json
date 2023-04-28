@@ -49,7 +49,7 @@
 		"eslint-config-prettier": "8.8.0",
 		"eslint-plugin-prettier": "4.2.1",
 		"prettier": "2.8.8",
-		"semantic-release": "21.0.1",
+		"semantic-release": "21.0.2",
 		"tsx": "3.12.6",
 		"typescript": "5.0.4",
 		"uvu": "0.5.6"
