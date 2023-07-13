@@ -29,7 +29,7 @@
 	"scripts": {
 		"compile": "tsc --build",
 		"lint": "eslint . --ext '.ts'",
-		"test:unit": "NODE_OPTIONS='--loader tsx --no-warnings' uvu 'test' '.*\\.test\\.ts$'",
+		"test:unit": "ava",
 		"test:unit:coverage": "c8 npm run test:unit"
 	},
 	"devDependencies": {
@@ -43,15 +43,16 @@
 		"@typescript-eslint/eslint-plugin": "5.62.0",
 		"@typescript-eslint/parser": "5.62.0",
 		"atob": "2.1.2",
+		"ava": "5.3.1",
 		"c8": "7.14.0",
 		"esbuild": "0.18.12",
 		"eslint": "8.44.0",
 		"eslint-config-prettier": "8.8.0",
+		"eslint-plugin-ava": "14.0.0",
 		"eslint-plugin-prettier": "4.2.1",
 		"prettier": "2.8.8",
 		"semantic-release": "21.0.7",
 		"tsx": "3.12.7",
-		"typescript": "5.1.6",
-		"uvu": "0.5.6"
+		"typescript": "5.1.6"
 	}
 }
