@@ -29,7 +29,7 @@
 	"scripts": {
 		"compile": "tsc --build",
 		"lint": "eslint . --ext '.ts'",
-		"test:unit": "NODE_OPTIONS='--loader tsx --no-warnings' uvu 'test' '.*\\.test\\.ts$'",
+		"test:unit": "ava",
 		"test:unit:coverage": "c8 npm run test:unit"
 	},
 	"devDependencies": {
