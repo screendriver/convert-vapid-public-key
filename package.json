@@ -2,9 +2,13 @@
 	"name": "convert-vapid-public-key",
 	"version": "1.1.0",
 	"type": "module",
-	"main": "./target/src/index.js",
-	"exports": "./target/src/index.js",
-	"types": "./target/src/index.d.ts",
+	"engines": {
+		"node": ">= 16.0.0"
+	},
+	"exports": {
+		"types": "./target/src/index.d.ts",
+		"default": "./target/src/index.js"
+	},
 	"author": "Christian Rackerseder <git@echooff.de>",
 	"license": "MIT",
 	"repository": {
