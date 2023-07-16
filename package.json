@@ -33,6 +33,7 @@
 		"test:unit:coverage": "c8 npm run test:unit"
 	},
 	"devDependencies": {
+		"@ava/typescript": "4.1.0",
 		"@types/atob": "2.1.2",
 		"@typescript-eslint/eslint-plugin": "6.0.0",
 		"@typescript-eslint/parser": "6.0.0",
