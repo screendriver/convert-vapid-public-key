@@ -42,7 +42,7 @@
 	},
 	"devDependencies": {
 		"@ava/typescript": "4.1.0",
-		"@types/atob": "2.1.3",
+		"@types/atob": "2.1.4",
 		"@typescript-eslint/eslint-plugin": "6.10.0",
 		"@typescript-eslint/parser": "6.10.0",
 		"atob": "2.1.2",
