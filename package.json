@@ -43,8 +43,8 @@
 	"devDependencies": {
 		"@ava/typescript": "4.1.0",
 		"@types/atob": "2.1.4",
-		"@typescript-eslint/eslint-plugin": "6.15.0",
-		"@typescript-eslint/parser": "6.15.0",
+		"@typescript-eslint/eslint-plugin": "6.16.0",
+		"@typescript-eslint/parser": "6.16.0",
 		"atob": "2.1.2",
 		"auto-changelog": "2.4.0",
 		"ava": "6.0.1",
