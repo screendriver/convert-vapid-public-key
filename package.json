@@ -56,7 +56,7 @@
 		"eslint-plugin-prettier": "5.1.3",
 		"prettier": "3.2.5",
 		"release-it": "17.2.1",
-		"tsx": "4.8.2",
+		"tsx": "4.9.0",
 		"typescript": "5.4.5"
 	}
 }
