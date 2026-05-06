@@ -10,7 +10,7 @@ compile:
     tsc --build
 
 lint:
-    eslint . --ext '.ts'
+    eslint .
 
 test-unit:
     mocha --config mocha.config.cjs

@@ -1,13 +1,13 @@
 module.exports = {
 	diff: true,
-	'forbid-pending': true,
-	extension: ['ts'],
-	spec: ['./test/**/*.test.ts'],
+	"forbid-pending": true,
+	extension: ["ts"],
+	spec: ["./test/**/*.test.ts"],
 	exclude: [],
 	jobs: 1,
 	parallel: false,
-	reporter: 'dot',
+	reporter: "dot",
 	slow: 75,
 	timeout: 2000,
-	ui: 'tdd'
+	ui: "tdd"
 };
