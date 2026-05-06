@@ -10,6 +10,6 @@
 	"reportDir": "./target/coverage",
 	"tempDirectory": "./target/c8_output",
 	"src": "src",
-	"include": ["target/src/**/*"],
-	"exclude": ["target/src/index.ts"]
+	"include": ["src/**/*.ts"],
+	"exclude": ["src/index.ts"]
 }

@@ -34,29 +34,27 @@
 		"clean": "rm -rf target",
 		"compile": "tsc --build",
 		"lint": "eslint . --ext '.ts'",
-		"pretest:unit": "npm run compile",
-		"test:unit": "ava",
+		"test:unit": "mocha --config mocha.config.cjs",
 		"test:unit:coverage": "c8 npm run test:unit",
 		"release:dry": "release-it --dry-run --no-npm",
 		"release": "release-it"
 	},
 	"devDependencies": {
-		"@ava/typescript": "5.0.0",
 		"@types/atob": "2.1.4",
+		"@types/mocha": "10.0.10",
+		"@types/node": "24.12.2",
 		"@typescript-eslint/eslint-plugin": "7.18.0",
 		"@typescript-eslint/parser": "7.18.0",
 		"atob": "2.1.2",
 		"auto-changelog": "2.5.1",
-		"ava": "6.4.1",
 		"c8": "11.0.0",
 		"esbuild": "0.28.0",
 		"eslint": "8.57.1",
 		"eslint-config-prettier": "10.1.8",
-		"eslint-plugin-ava": "14.0.0",
 		"eslint-plugin-prettier": "5.5.5",
+		"mocha": "11.7.5",
 		"prettier": "3.8.3",
 		"release-it": "20.0.1",
-		"tsx": "4.21.0",
 		"typescript": "6.0.3"
 	}
 }
