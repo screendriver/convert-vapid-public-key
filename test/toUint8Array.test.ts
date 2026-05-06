@@ -1,6 +1,6 @@
 import test from "ava";
 import atob from "atob";
-import { toUint8Array } from "../src/toUint8Array.js";
+import { toUint8Array } from "../src/toUint8Array.ts";
 
 test("convert given base64 string to an Uint8Array", (t) => {
 	const actual = toUint8Array("BIW2q45TM1wfJz9", atob);

@@ -1,4 +1,4 @@
-import { toUint8Array } from "./toUint8Array.js";
+import { toUint8Array } from "./toUint8Array.ts";
 
 /**
  * Converts the given VAPID public key to an Uint8Array.
