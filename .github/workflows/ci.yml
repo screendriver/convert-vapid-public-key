@@ -18,8 +18,8 @@ jobs:
             - name: Install dependencies
               run: npm clean-install
             - name: Compile source code
-              run: npm run compile
+              run: npx just compile
             - name: Run unit tests
-              run: npm run test:unit:coverage
+              run: npx just test-unit-coverage
             - name: Check source code
-              run: npm run lint
+              run: npx just lint

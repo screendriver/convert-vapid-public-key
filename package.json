@@ -30,15 +30,6 @@
 		"target/src/**/*.js.map",
 		"target/src/**/*.d.ts"
 	],
-	"scripts": {
-		"clean": "rm -rf target",
-		"compile": "tsc --build",
-		"lint": "eslint . --ext '.ts'",
-		"test:unit": "mocha --config mocha.config.cjs",
-		"test:unit:coverage": "c8 npm run test:unit",
-		"release:dry": "release-it --dry-run --no-npm",
-		"release": "release-it"
-	},
 	"devDependencies": {
 		"@types/atob": "2.1.4",
 		"@types/mocha": "10.0.10",
@@ -55,6 +46,7 @@
 		"mocha": "11.7.5",
 		"prettier": "3.8.3",
 		"release-it": "20.0.1",
+		"rust-just": "1.50.0",
 		"typescript": "6.0.3"
 	}
 }
