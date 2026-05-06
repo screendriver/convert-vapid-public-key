@@ -25,7 +25,7 @@ async function subscribe() {
 	const registration = await navigator.serviceWorker.register("service-worker.js");
 	const subscribeOptions = {
 		userVisibleOnly: true,
-		applicationServerKey: convertVapidKey("<your-base64-vapid-public-key>"),
+		applicationServerKey: convertVapidKey("<your-base64-vapid-public-key>")
 	};
 	const pushSubscription = await registration.pushManager.subscribe(subscribeOptions);
 	// ...

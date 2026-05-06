@@ -12,11 +12,16 @@ compile:
 lint:
     eslint .
 
-test-unit:
-    mocha --config mocha.config.json
+format-check:
+    prettier --check .
 
-test-unit-coverage:
-    c8 just test-unit
+test-unit *options:
+    mocha --config mocha.config.json {{options}}
+
+test: compile lint format-check (test-unit)
+
+test-coverage *options:
+    c8 just test-unit {{options}}
 
 release-dry:
     release-it --dry-run --no-npm
