@@ -13,7 +13,7 @@ lint:
     eslint .
 
 test-unit:
-    mocha --config mocha.config.cjs
+    mocha --config mocha.config.json
 
 test-unit-coverage:
     c8 just test-unit

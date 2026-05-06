@@ -5,7 +5,7 @@ import { typescriptConfig } from "@enormora/eslint-config-typescript";
 
 export default [
 	{
-		ignores: ["target/**/*"]
+		ignores: ["target/**/*", "mocha.config.json"]
 	},
 	baseConfig,
 	nodeConfig,
@@ -19,7 +19,7 @@ export default [
 	},
 	{
 		...nodeConfigFileConfig,
-		files: ["eslint.config.js", "mocha.config.cjs"]
+		files: ["eslint.config.js"]
 	},
 	{
 		files: ["**/*.ts"],
@@ -44,7 +44,7 @@ export default [
 		}
 	},
 	{
-		files: ["eslint.config.js", "mocha.config.cjs"],
+		files: ["eslint.config.js"],
 		rules: {
 			"@stylistic/no-tabs": "off",
 			"@stylistic/indent": "off",
