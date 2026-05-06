@@ -10,12 +10,6 @@ To subscribe to [Web Push Notifications](https://developers.google.com/web/funda
 $ npm install --save convert-vapid-public-key
 ```
 
-or if you use [Yarn](https://yarnpkg.com) 🐈
-
-```sh
-$ yarn add convert-vapid-public-key
-```
-
 ## Usage 🔨
 
 ```ts
