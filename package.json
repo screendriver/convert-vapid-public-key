@@ -34,7 +34,7 @@
 		"@enormora/eslint-config-base": "0.0.31",
 		"@enormora/eslint-config-mocha": "0.0.30",
 		"@enormora/eslint-config-node": "0.0.28",
-		"@enormora/eslint-config-typescript": "0.0.36",
+		"@enormora/eslint-config-typescript": "0.0.39",
 		"@types/atob": "2.1.4",
 		"@types/mocha": "10.0.10",
 		"@types/node": "24.12.4",
