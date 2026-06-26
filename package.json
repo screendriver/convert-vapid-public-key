@@ -44,7 +44,7 @@
 		"esbuild": "0.28.1",
 		"eslint": "10.5.0",
 		"mocha": "11.7.6",
-		"prettier": "3.8.4",
+		"prettier": "3.8.5",
 		"release-it": "20.2.0",
 		"rust-just": "1.54.0",
 		"typescript": "6.0.3"
