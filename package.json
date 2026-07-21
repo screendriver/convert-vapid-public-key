@@ -31,7 +31,7 @@
 		"target/src/**/*.d.ts"
 	],
 	"devDependencies": {
-		"@enormora/eslint-config-base": "0.0.31",
+		"@enormora/eslint-config-base": "0.0.54",
 		"@enormora/eslint-config-mocha": "0.0.50",
 		"@enormora/eslint-config-node": "0.0.36",
 		"@enormora/eslint-config-typescript": "0.0.36",
