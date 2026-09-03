@@ -45,7 +45,7 @@
 		"eslint": "10.9.1",
 		"mocha": "11.8.0",
 		"prettier": "3.9.6",
-		"release-it": "20.2.1",
+		"release-it": "21.0.2",
 		"rust-just": "1.57.0",
 		"typescript": "6.0.3"
 	}
