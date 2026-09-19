@@ -47,6 +47,6 @@
 		"prettier": "3.9.8",
 		"release-it": "21.1.0",
 		"rust-just": "1.57.0",
-		"typescript": "6.0.3"
+		"typescript": "7.0.2"
 	}
 }
